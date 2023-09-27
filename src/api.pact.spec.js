@@ -12,7 +12,7 @@ const mockProvider = new Pact({
     : 'pactflow-example-provider'
 });
 
-// test-line
+// test-lin
 
 describe('API Pact test', () => {
   describe('retrieving a product', () => {
