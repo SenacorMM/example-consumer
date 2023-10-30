@@ -69,7 +69,7 @@ describe('API Pact test', () => {
           }
         })
         .willRespondWith({
-          status: 200
+          status: 404
         });
       return mockProvider.executeTest(async (mockserver) => {
         const api = new API(mockserver.url);
