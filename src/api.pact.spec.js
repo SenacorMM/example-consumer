@@ -19,7 +19,7 @@ describe('API Pact test', () => {
     test('ID 10 exists', async () => {
       // Arrange
       const expectedProduct = {
-        id: '100',
+        id: '10',
         type: 'CREDIT_CARDS',
         name: '28 Degrees'
       };
@@ -28,11 +28,11 @@ describe('API Pact test', () => {
       // const expectedProduct = { id: '10', type: 'CREDIT_CARD', name: '28 Degrees', price: 30.0, newField: 22}
 
       mockProvider
-        .given('a product with ID 100 exists')
+        .given('a product with ID 10 exists')
         .uponReceiving('a request to get a product')
         .withRequest({
           method: 'GET',
-          path: '/product/100',
+          path: '/product/10',
           headers: {
             Authorization: like('Bearer 2019-01-14T11:34:18.045Z')
           }
